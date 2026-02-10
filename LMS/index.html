@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LMS Login</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>LMS Login</h2>
+
+        <form id="loginForm">
+            <div>
+                <label>Username</label>
+                <input type="text" id="username">
+                <small class="error" id="userError"></small>
+            </div>
+
+            <div>
+                <label>Password</label>
+                <input type="password" id="password">
+                <small class="error" id="passError"></small>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div id="alertContainer" class="alert-container"></div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/alerts.js"></script>
+</body>
+</html>

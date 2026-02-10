@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+
+
+    <header class="topbar">
+        <h2>LMS Dashboard</h2>
+        <button id="themeToggle" class="theme-btn">
+            Toggle Theme
+        </button>
+    </header>
+
+    <aside id="sidebar" class="sidebar">
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </aside>
+
+
+    <main class="content">
+        <h1>Welcome to Dashboard</h1>
+
+        <div id="dashboardCards" class="cards-container"></div>
+
+
+    </main>
+
+    <div id="alertContainer" class="alert-container"></div>
+
+    <script src="js/theme.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/alerts.js"></script>
+
+
+</body>
+
+</html>

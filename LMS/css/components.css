@@ -1,0 +1,207 @@
+.cards-container {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    
+    margin-top: 20px;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    min-width: 100px;
+}
+
+.dashboard-card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #c1b2b2;
+}
+
+.dashboard-card p {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #2b6cb0;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.course-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.course-card h3 {
+    margin: 0 0 10px;
+}
+
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.status-active {
+    background: #015501;
+    color: white;
+}
+
+.status-completed {
+    background: #105ed3;
+    color: white;
+}
+
+
+.assignment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.assignment-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.assignment-card h3 {
+    margin: 0 0 10px;
+}
+
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* Pending */
+.status-pending {
+    background: #c6190d;
+    color: rgb(230, 222, 222);
+}
+
+/* Submitted */
+.status-submitted {
+    background: #025e04;
+    color: white;
+}
+
+/* Late */
+.status-late {
+    background: #d3480c;
+    color: white;
+}
+
+.btn-area {
+    margin-top: 15px;
+}
+
+.submit-btn {
+    padding: 8px 12px;
+    border: none;
+    background: #02366c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #2861a6;
+}
+
+button[disabled] {
+    background: rgb(63, 63, 63);
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.profile-card {
+    background: white;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    min-width: 300px;
+}
+
+.profile-card label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.profile-card input {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.profile-card button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #083e79;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.profile-card button:hover {
+    background: #4186da;
+}
+
+.alert-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.alert {
+    padding: 12px 18px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    animation: fadeIn 0.3s ease;
+}
+
+.alert-success {
+    background: #1e8e52;
+}
+
+.alert-error {
+    background: #ed1a1a;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
